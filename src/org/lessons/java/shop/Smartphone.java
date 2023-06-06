@@ -30,7 +30,7 @@ public class Smartphone extends Prodotto{
 
     @Override
     public String toString() {
-        return "Specifiche Smartphone {" +
+        return super.toString() + "Specifiche Smartphone {" +
                 "codiceImei=" + codiceImei +
                 ", memoriaDisponibile=" + memoriaDisponibile +
                 '}';
