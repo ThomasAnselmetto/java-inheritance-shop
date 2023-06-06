@@ -13,4 +13,28 @@ public class Televisori extends Prodotto{
         this.pollici = pollici;
         this.isSmart = isSmart;
     }
+
+    public int getPollici() {
+        return pollici;
+    }
+
+    public void setPollici(int pollici) {
+        this.pollici = pollici;
+    }
+
+    public boolean isSmart() {
+        return isSmart;
+    }
+
+    public void setSmart(boolean smart) {
+        isSmart = smart;
+    }
+
+    @Override
+    public String toString() {
+        return "Televisori{" +
+                "pollici=" + pollici +
+                ", isSmart=" + isSmart +
+                '}';
+    }
 }

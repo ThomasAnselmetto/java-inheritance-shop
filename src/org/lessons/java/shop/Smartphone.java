@@ -11,4 +11,28 @@ public class Smartphone extends Prodotto{
         this.codiceImei = codiceImei;
         this.memoriaDisponibile = memoriaDisponibile;
     }
+
+    public int getCodiceImei() {
+        return codiceImei;
+    }
+
+    public void setCodiceImei(int codiceImei) {
+        this.codiceImei = codiceImei;
+    }
+
+    public BigDecimal getMemoriaDisponibile() {
+        return memoriaDisponibile;
+    }
+
+    public void setMemoriaDisponibile(BigDecimal memoriaDisponibile) {
+        this.memoriaDisponibile = memoriaDisponibile;
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "codiceImei=" + codiceImei +
+                ", memoriaDisponibile=" + memoriaDisponibile +
+                '}';
+    }
 }
