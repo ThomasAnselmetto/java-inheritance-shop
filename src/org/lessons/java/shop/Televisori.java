@@ -32,7 +32,7 @@ public class Televisori extends Prodotto{
 
     @Override
     public String toString() {
-        return "Televisori{" +
+        return "Specifiche Televisore {" +
                 "pollici=" + pollici +
                 ", isSmart=" + isSmart +
                 '}';

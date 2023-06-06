@@ -30,7 +30,7 @@ public class Cuffie extends Prodotto{
 
     @Override
     public String toString() {
-        return "Cuffie{" +
+        return "Specifiche Cuffie {" +
                 "colore='" + colore + '\'' +
                 ", isWireless=" + isWireless +
                 '}';

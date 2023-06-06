@@ -1,10 +1,11 @@
 package org.lessons.java.shop;
 import java.math.BigDecimal;
+import java.util.Random;
 
 
 public class Prodotto {
     // Attributi
-    private int codice;
+    private final int codice;
     private String nome;
     private String descrizione;
     private BigDecimal  prezzo;
@@ -12,6 +13,7 @@ public class Prodotto {
 
     //Costruttore
     public Prodotto(String nome, String descrizione, BigDecimal prezzo, BigDecimal iva) {
+        this.codice = generateCode();
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
@@ -61,6 +63,20 @@ public class Prodotto {
 
         return codice + "-" + nome;
     }
+//    mi sono cancellato il metodo per creare il codice ma cosi' non ce l'ho piu' da nessuna parte'
 
-
+    private int generateCode() {
+        Random rand = new Random();
+        return rand.nextInt(1000);
+    }
+    @Override
+    public String toString() {
+        return "Prodotto {" +
+                "codice =" + codice +
+                ", nome ='" + nome + '\'' +
+                ", descrizione ='" + descrizione + '\'' +
+                ", prezzo =" + prezzo +
+                ", iva =" + iva +
+                '}';
+    }
 }
